@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <!-- Form to Add Todo -->
+        <form id="todo-form">
+            <input type="text" id="todo-title" placeholder="Enter a new todo" required />
+            <button type="submit" class="add">Add Todo</button>
+        </form>
+
+        <!-- Form to Edit Todo -->
+        <form id="edit-form" style="display: none;">
+            <input type="hidden" id="edit-id" />
+            <input type="text" id="edit-title" placeholder="Update todo" required />
+            <button type="submit" class="update">Update Todo</button>
+            <button type="button" id="cancel-edit" class="cancel">Cancel</button>
+        </form>
+
+        <!-- Todo List -->
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
